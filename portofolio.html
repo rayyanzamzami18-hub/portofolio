@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio v2 — Nama Anda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style> body{font-family: 'Inter', sans-serif;} </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-teal-500.  text-gray-800 antialiased">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full backdrop-blur bg-white/70 border-b z-40">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="font-bold text-lg tracking-tight">Roy ZX</div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#home" class="hover:text-black">Home</a>
+        <a href="#about" class="hover:text-black">About</a>
+        <a href="#projects" class="hover:text-black">Projects</a>
+        <a href="#contact" class="hover:text-black">Contact</a>
+      </nav>
+      <button class="md:hidden" id="menuBtn">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 text-sm">
+      <a href="#home" class="block py-1">Home</a>
+      <a href="#about" class="block py-1">About</a>
+      <a href="#projects" class="block py-1">Projects</a>
+      <a href="#contact" class="block py-1">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="max-w-5xl mx-auto px-6 pt-40 pb-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Halo, Saya <span class="text-indigo-600">Rayyan.Z</span>.</h1>
+        <p class="mt-4 text-gray-600 text-lg">Seorang Web Developer yang fokus pada desain minimalis, tipografi bersih, dan performa cepat. Saya membangun interface modern menggunakan TailwindCSS, React, dan teknologi web terbaru.</p>
+
+        <div class="mt-8 flex gap-4">
+          <a href="#projects" class="px-5 py-2 bg-blue-500 text-white rounded-lg">Lihat Project</a>
+          <a href="#contact" class="px-5 py-2 border border-teal-400 rounded-lg">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <img src="image/WhatsApp Image 2025-09-16 at 20.54.10.jpeg" class="w-100 h-50 rounded-start object-cover shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-20 border-t">
+    <h2 class="text-3xl font-bold">Tentang Saya</h2>
+    <p class="mt-4 text-gray-600 max-w-3xl">Saya membangun aplikasi web yang mengutamakan pengalaman pengguna dan estetika sederhana. Dengan fokus pada Frontend Development dan UI Engineering, saya berusaha membuat desain yang bersih, responsif, dan mudah digunakan.</p>
+
+    <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+      <div class="p-4 bg-gray-50 rounded-lg shadow-sm">HTML</div>
+      <div class="p-4 bg-gray-50 rounded-lg shadow-sm">TailwindCSS</div>
+      <div class="p-4 bg-gray-50 rounded-lg shadow-sm">JavaScript</div>
+      <div class="p-4 bg-gray-50 rounded-lg shadow-sm">React</div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-20 border-t">
+    <h2 class="text-3xl font-bold">Project Terbaru</h2>
+
+    <div class="mt-10 grid sm:grid-cols-2 gap-6">
+
+      <div class="rounded-xl overflow-hidden border shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80" class="h-48 w-full object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold text-lg">Project A</h3>
+          <p class="text-sm text-gray-600 mt-2">Website modern dengan fokus UI minimalis dan animasi halus.</p>
+          <a href="#" class="text-indigo-600 text-sm mt-3 inline-block">Lihat detail →</a>
+        </div>
+      </div>
+
+      <div class="rounded-xl overflow-hidden border shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80" class="h-48 w-full object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold text-lg">Project B</h3>
+          <p class="text-sm text-gray-600 mt-2">Dashboard dengan komponen custom dan desain responsif.</p>
+          <a href="#" class="text-indigo-600 text-sm mt-3 inline-block">Lihat detail →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto px-6 py-20 border-t">
+    <h2 class="text-3xl font-bold">Kontak</h2>
+    <p class="text-gray-600 mt-2">Tertarik berkolaborasi? Silakan kirim pesan.</p>
+
+    <form class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <input class="p-3 border rounded-lg" placeholder="Nama" />
+      <input class="p-3 border rounded-lg" placeholder="Email" />
+      <textarea class="p-3 border rounded-lg sm:col-span-2 h-32" placeholder="Pesan"></textarea>
+      <button class="sm:col-span-2 px-6 py-3 bg-black text-white rounded-lg">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer class="py-10 text-center text-gray-500 text-sm border-t">© 2025 — Dibuat menggunakan TailwindCSS</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn?.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

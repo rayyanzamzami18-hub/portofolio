@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royyan Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+ <style>
+  #loader-logo {
+    animation: logoIn 1.2s ease forwards;
+  }
+
+  @keyframes logoIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.6) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(45deg);
+    }
+  }
+</style>
+
+</head>
+<body class="bg-[#0a192f] text-gray-300 font-sans overflow-x-hidden opacity-0 transition-opacity duration-700">
+
+
+
+  <!-- LOADING SCREEN -->
+<!-- LOADER -->
+<div id="loader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0a192f]">
+  <div id="loader-logo" class="relative w-20 h-20">
+    <div class="absolute inset-0 border-2 border-teal-400 rotate-45"></div>
+    <span class="absolute inset-0 flex items-center justify-center text-teal-400 text-2xl font-bold">
+      R
+    </span>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 w-full px-12 py-6 flex justify-between items-center bg-[#0a192f]/80 backdrop-blur transition-transform duration-300 z-50">
+  <div class="relative w-12 h-12">
+    <div class="absolute inset-0 border-2 border-teal-400 rotate-45"></div>
+    <span class="absolute inset-0 flex items-center justify-center text-teal-400 font-bold">R</span>
+  </div>
+  <ul class="flex gap-8 text-sm">
+    <li class="fade-up" style="animation-delay: 1.2s"><a href="#about" class="hover:text-teal-400">01. About</a></li>
+    <li class="fade-up" style="animation-delay: 1.3s"><a href="#experience" class="hover:text-teal-400">02. Experience</a></li>
+    <li class="fade-up" style="animation-delay: 1.4s"><a href="#work" class="hover:text-teal-400">03. Work</a></li>
+    <li class="fade-up" style="animation-delay: 1.5s"><a href="#contact" class="hover:text-teal-400">04. Contact</a></li>
+    <li class="fade-up" style="animation-delay: 1.6s"><a class="border border-teal-400 px-4 py-1 rounded text-teal-400 hover:bg-teal-400 hover:text-black">Resume</a></li>
+  </ul>
+</nav>
+
+<!-- SOCIAL LEFT -->
+<div class="fixed left-10 bottom-0 flex flex-col items-center gap-6 text-gray-400">
+  <!-- GitHub -->
+  <a href="github.com" target="_blank" class="hover:text-teal-400 transition-all">
+    <i class="fa-brands fa-github text-2xl"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="instagram.com" target="_blank" class="hover:text-teal-400 transition-all">
+    <i class="fa-brands fa-instagram text-2xl"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="wa.me" target="_blank" class="hover:text-teal-400 transition-all">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Garis Dekorasi -->
+  <div class="w-px h-24 bg-gray-500"></div>
+</div>
+
+<!-- HERO -->
+<section class="min-h-screen px-32 pt-40">
+  <p class="text-teal-400 mb-4 fade-up" style="animation-delay: .2s">
+    Hi, my name is
+  </p>
+
+  <h1 class="text-7xl font-bold text-gray-100 fade-up" style="animation-delay: .4s">
+    Roy ZX.
+  </h1>
+
+  <h2 class="text-6xl font-bold text-gray-500 mt-2 fade-up" style="animation-delay: .6s">
+    I build things for the web.
+  </h2>
+
+  <p class="max-w-xl mt-6 text-gray-400 fade-up" style="animation-delay: .8s">
+    I’m a developer focused on building clean, accessible, and responsive web interfaces.
+  </p>
+
+  <a class="inline-block mt-10 px-6 py-3 border border-teal-400 text-teal-400 rounded fade-up"
+     style="animation-delay: 1s">
+    Check out my work
+  </a>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="px-32 py-32 grid grid-cols-2 gap-20 items-center" data-aos="fade-up">
+  <div>
+    <h3 class="text-xl text-teal-400 mb-6">01. About Me</h3>
+    <p class="mb-4">Saya seorang front-end programmer pemula yang suka belajar dan eksplor hal baru di dunia web. Di waktu luang, saya bermain game, olahraga, dan nge-gym untuk tetap sehat. Tetap konsisten beribadah dan selalu berusaha berkembang, baik secara profesional maupun pribadi.</p>
+    <ul class="grid grid-cols-2 gap-2 text-sm">
+      <li>▹ JavaScript (dari AI)</li><li>▹ HTML & CSS</li>
+      <li>▹ Tailwind CSS</li><li>▹ Canva & Capcut </li>
+    </ul>
+  </div>
+  
+  <div class="relative group w-[300px] h-[300px]">
+  
+  <!-- Elemen Border Semu (letaknya di belakang) -->
+  <!-- Tambahkan class 'z-0' atau biarkan tanpa z-index jika elemen lain memiliki z-index yang lebih tinggi -->
+  <div class="absolute inset-0 border-2 border-teal-400 translate-x-5 translate-y-5 z-0"></div>
+  
+  <!-- Elemen Overlay (tetap di tengah) -->
+  <div class="absolute inset-0 bg-teal-400 opacity-30 group-hover:opacity-0 transition z-10"></div>
+  
+  <!-- Container utama dengan gambar/warna (letaknya di depan) -->
+  <!-- Tambahkan class 'z-20' agar selalu tampil di depan border dan overlay -->
+  <div class="w-full h-full bg-[#112240] relative z-20" 
+       style="background-image: url('image/Foto\ keren\ 3.jpg'); 
+              background-size: cover; 
+              background-position: center;">
+  </div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="max-w-4xl mx-auto px-6 py-24">
+  <div class="flex items-center mb-10">
+    <h1 class="text-xl text-teal-400 whitespace-nowrap">
+      02. Where I've Worked
+    </h3>
+    <div class="ml-4 h-px w-full bg-[#233554]"></div>
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-12">
+
+    <!-- LEFT TABS -->
+    <div class="relative flex md:flex-col overflow-x-auto md:overflow-visible">
+  <div class="absolute left-0 top-0 h-full w-px bg-[#233554] hidden md:block"></div>
+
+  <button data-tab="0" class="job-tab px-5 py-3 text-sm text-teal-400 bg-[#112240] border-l-2 border-teal-400">
+    HTML & CSS
+  </button>
+
+  <button data-tab="1" class="job-tab px-5 py-3 text-sm text-gray-400 hover:text-teal-400 hover:bg-[#112240]">
+    JavaScript
+  </button>
+
+  <button data-tab="2" class="job-tab px-5 py-3 text-sm text-gray-400 hover:text-teal-400 hover:bg-[#112240]">
+    Tailwind CSS
+  </button>
+
+  <button data-tab="3" class="job-tab px-5 py-3 text-sm text-gray-400 hover:text-teal-400 hover:bg-[#112240]">
+    Bootstrap
+  </button>
+
+  <button data-tab="4" class="job-tab px-5 py-3 text-sm text-gray-400 hover:text-teal-400 hover:bg-[#112240]">
+    Canva
+  </button>
+
+  <button data-tab="5" class="job-tab px-5 py-3 text-sm text-gray-400 hover:text-teal-400 hover:bg-[#112240]">
+    Capcut
+  </button>
+</div>
+
+
+    <!-- RIGHT CONTENT -->
+    <div class="max-w-2xl w-full">
+
+  <div class="job-content" data-content="0">
+    <h4 class="text-lg font-semibold text-gray-100">
+      HTML & CSS
+    </h4>
+    <ul class="mt-6 space-y-3 text-sm">
+      <li class="flex gap-3"><span class="text-teal-400">▹</span> Struktur HTML</li>
+      <li class="flex gap-3"><span class="text-teal-400">▹</span> Styling CSS</li>
+    </ul>
+  </div>
+
+  <div class="job-content hidden" data-content="1">
+    <h4 class="text-lg font-semibold text-gray-100">JavaScript</h4>
+    <p class="mt-4 text-sm">DOM manipulation, event handling</p>
+  </div>
+
+  <div class="job-content hidden" data-content="2">
+    <h4 class="text-lg font-semibold text-gray-100">Tailwind CSS</h4>
+    <p class="mt-4 text-sm">Utility-first styling</p>
+  </div>
+
+  <div class="job-content hidden" data-content="3">
+    <h4 class="text-lg font-semibold text-gray-100">Bootstrap</h4>
+    <p class="mt-4 text-sm">Responsive layout</p>
+  </div>
+
+  <div class="job-content hidden" data-content="4">
+    <h4 class="text-lg font-semibold text-gray-100">Canva</h4>
+    <p class="mt-4 text-sm">Design konten visual</p>
+  </div>
+
+  <div class="job-content hidden" data-content="5">
+    <h4 class="text-lg font-semibold text-gray-100">Capcut</h4>
+    <p class="mt-4 text-sm">Editing video</p>
+  </div>
+
+</div>
+
+</section>
+<!-- WORK -->
+<section id="work" class="px-32 py-32" data-aos="fade-up">
+  <h1 class="text-xl text-teal-400 mb-16">03. Projek Saya</h3>
+  <div class="grid grid-cols-2 gap-20 items-center mb-32">
+    <div class="relative">
+      <div class="absolute inset-0 bg-black-400 opacity-30 hover:opacity-0 transition"
+      style="background-image: url('image/Foto\ keren.jpeg'); 
+              background-size: cover; 
+              background-position: center;">></div>
+      <div class="h-[350px] bg-[#112240]"></div>
+    </div>
+    <div class="bg-[#112240] p-6 relative -left-20">
+      <h4 class="text-2xl font-bold text-teal-400">Projek & Tugas Bahasa Arab</h4>
+      <p class="mt-4 text-sm">Ini adalah Tugas-tugas Bahasa Arab yang saya kerjakan selama menjadi santri di Ma'had HSI Boarding School Purworejo</p>
+    </div>
+  </div>
+
+  <h4 class="text-center mb-10">Projek Bahasa Arab</h4>
+  <div class="video-grid">
+  <div class="video-box">
+    <div class="video-frame">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/69W-CqGNebA?si=7hEbo4J_J5Hj4C5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>>
+    </div>
+    <p class="video-title">Percakapan Bahasa Arab</p>
+  </div>
+        <div class="video-box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/I4OxAivhgRE?si=qW5nonbFP4dXJzZh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">Tafsir Surah An-Nasr</div>
+        </div>
+        <div class="video-box">
+            <iframe src="https://youtube.com/shorts/d4Zrmn12-h8?si=OV0gyK9FJmn36g9y" frameborder="0"></iframe>
+            <div class="video-title">Vlog tentang kegiatan sehari-hari</div>
+        </div>
+        <div class="video-box">
+            <iframe src="https://youtube.com/shorts/JDxNu1kuLak?si=kcrMa994_I-R3L-v" frameborder="0"></iframe>
+            <div class="video-title">tafsir surah an-nas</div>
+        </div>
+        <div class="video-box">
+            <iframe src="https://youtube.com/shorts/JDxNu1kuLak?si=kcrMa994_I-R3L-v" frameborder="0"></iframe>
+            <div class="video-title">tafsir surah an-nas</div>
+        </div>
+        <div class="video-box">
+            <iframe src="https://youtube.com/shorts/JDxNu1kuLak?si=kcrMa994_I-R3L-v" frameborder="0"></iframe>
+            <div class="video-title">tafsir surah an-nas</div>
+        </div>
+        
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-32 py-32 text-center" data-aos="fade-up">
+  <p class="text-teal-400">04. What's Next?</p>
+  <h2 class="text-4xl font-bold text-gray-100">Get In Touch</h2>
+  <p class="max-w-md mx-auto mt-4">I’m open to learning opportunities, collaboration, or just a friendly chat.</p>
+  <a class="inline-block mt-10 px-6 py-3 border border-teal-400 text-teal-400 rounded hover:bg-teal-400 hover:text-black transition">Say Hello</a>
+</section>
+
+<footer class="text-center py-6 text-xs text-gray-500">Designed & Built by Royyan</footer>
+
+<script>
+  AOS.init({ once: true, duration: 800, offset: 120 });
+  let lastScroll = 0;
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    const current = window.scrollY;
+    if (current > lastScroll) nav.style.transform = 'translateY(-100%)';
+    else nav.style.transform = 'translateY(0)';
+    lastScroll = current;
+  });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    // TAHAN LOADING BIAR KELIATAN
+    setTimeout(() => {
+      loader.classList.add("opacity-0", "transition-opacity", "duration-700");
+
+      setTimeout(() => {
+        loader.remove();
+        document.body.classList.remove("opacity-0");
+        document.body.classList.add("opacity-100");
+      }, 700);
+
+    }, 1500); // ⬅️ INI YANG BIKIN GAK KEDIP
+  });
+</script>
+
+
+</body>
+</html>
